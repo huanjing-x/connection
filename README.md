@@ -6,8 +6,9 @@
 
   ``bash
   npm install
+  
   npm run dev
-
+  
   浏览器打开 http://localhost:5173 即可使用。
 
   功能
@@ -57,4 +58,5 @@
   npm run preview   # 预览构建结果
 
   dist/ 目录可直接部署到任意静态托管服务（GitHub Pages、Vercel、Netlify 等）。
+  
   //代码全部使用claude Code生成，包括这个README.md
