@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Georgia', 'Noto Serif SC', 'SimSun', serif;
+    color: #3d2b1f;
+    background-color: #f5f0e8;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #c4b89e transparent;
+  }
+}
+
+@layer components {
+  .panel-card {
+    @apply bg-parchment-light border border-border rounded-lg p-3 shadow-sm;
+  }
+  .btn-primary {
+    @apply bg-accent text-white px-3 py-1.5 rounded text-sm hover:bg-accent-light transition-colors;
+  }
+  .btn-secondary {
+    @apply bg-border text-ink px-3 py-1.5 rounded text-sm hover:bg-amber-200 transition-colors;
+  }
+  .btn-danger {
+    @apply bg-red-700 text-white px-2 py-1 rounded text-xs hover:bg-red-800 transition-colors;
+  }
+  .input-field {
+    @apply w-full border border-border rounded px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-accent-light;
+  }
+}
+
+@layer utilities {
+  .timeline-slider {
+    @apply w-full h-2 bg-border rounded-lg appearance-none cursor-pointer;
+  }
+  .timeline-slider::-webkit-slider-thumb {
+    @apply appearance-none w-5 h-5 rounded-full bg-accent cursor-pointer shadow-md;
+  }
+}
